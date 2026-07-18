@@ -29,6 +29,12 @@ Some prompts to answer:
 
 You can include a simple diagram or bullet list if helpful.
 
+In the real world, recomendations are made based on the user's listening activity and their behavior like skips, likes, etc. These systems also look at the songs being listened to and look into their mood, energy, and genre to make similar recomendations. 
+
+Features Song class will have: genre, mood, and energy
+Features UserProfile will have/store: favorite genre, preferred mood, and preferred energy
+
+My Recommender computes a score by giving energy a 50% weight, mood a 30% weight and genre a 20% weight, prioritizing energy. Since genre and mood are strings, they are given a higher score if they are exact matches. Doing 1 - |song.energy - user.preferred_energy| for the energy score to see how close the energies are (closer to 1). Songs are recomended by having a score calculated for them then sorted from highest to lowest.
 ---
 
 ## Getting Started
