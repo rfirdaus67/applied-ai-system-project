@@ -34,7 +34,7 @@ In the real world, recomendations are made based on the user's listening activit
 Features Song class will have: genre, mood, and energy
 Features UserProfile will have/store: favorite genre, preferred mood, and preferred energy
 
-My Recommender computes a score by giving energy a 50% weight, mood a 30% weight and genre a 20% weight, prioritizing energy. Since genre and mood are strings, they are given a higher score if they are exact matches. Doing 1 - |song.energy - user.preferred_energy| for the energy score to see how close the energies are (closer to 1). Songs are recomended by having a score calculated for them then sorted from highest to lowest.
+My Recommender computes a score by giving mood +2.5 points, energy +2.0 points, and genre +1.0 points, prioritizing mood. Since mood is a string and is the most depended on, if the moods aren't an exact match then no points are given. So even if a song has a similar mood which should be given more priority, they'll get another song most likely. Since genre and mood are strings, they are given a higher score if they are exact matches. Doing 1 - |song.energy - user.preferred_energy| for the energy score to see how close the energies are (closer to 1). Songs are recomended by having a score calculated for them then sorted from highest to lowest.
 ---
 
 ## Getting Started
