@@ -111,14 +111,178 @@ Paste a sample of your recommender's output here as a text block so a reader can
      • energy 0.75 vs preferred 0.80 (+1.90)
 
 ```
-# e.g.:
-# User profile: genre=indie, mood=chill, energy=low
-# Recommendations:
-#   1. ...
-#   2. ...
-#   3. ...
-```
+================================================
+  Top 5 recommendations
+  for intense / jazz @ energy 0.1
+================================================
 
+1. Storm Runner — Voltline
+   Score: 2.88
+   Reasons:
+     • mood matches (intense)
+     • energy 0.91 vs preferred 0.10 (+0.38)
+
+2. Gym Hero — Max Pulse
+   Score: 2.84
+   Reasons:
+     • mood matches (intense)
+     • energy 0.93 vs preferred 0.10 (+0.34)
+
+3. Coffee Shop Stories — Slow Stereo
+   Score: 2.46
+   Reasons:
+     • energy 0.37 vs preferred 0.10 (+1.46)
+     • genre matches (jazz)
+
+4. Spacewalk Thoughts — Orbit Bloom
+   Score: 1.64
+   Reasons:
+     • energy 0.28 vs preferred 0.10 (+1.64)
+
+5. Library Rain — Paper Lanterns
+   Score: 1.50
+   Reasons:
+     • energy 0.35 vs preferred 0.10 (+1.50)
+```
+```
+================================================
+  Top 5 recommendations
+  for chill / pop @ energy 0.85
+================================================
+
+1. Midnight Coding — LoRoom
+   Score: 3.64
+   Reasons:
+     • mood matches (chill)
+     • energy 0.42 vs preferred 0.85 (+1.14)
+
+2. Library Rain — Paper Lanterns
+   Score: 3.50
+   Reasons:
+     • mood matches (chill)
+     • energy 0.35 vs preferred 0.85 (+1.00)
+
+3. Spacewalk Thoughts — Orbit Bloom
+   Score: 3.36
+   Reasons:
+     • mood matches (chill)
+     • energy 0.28 vs preferred 0.85 (+0.86)
+
+4. Levitating — Dua Lipa
+   Score: 2.96
+   Reasons:
+     • energy 0.83 vs preferred 0.85 (+1.96)
+     • genre matches (pop)
+
+5. Sunrise City — Neon Echo
+   Score: 2.94
+   Reasons:
+     • energy 0.82 vs preferred 0.85 (+1.94)
+     • genre matches (pop)
+```
+```
+================================================
+  Top 5 recommendations
+  for chill / rock @ energy 0.0
+================================================
+
+1. Spacewalk Thoughts — Orbit Bloom
+   Score: 3.94
+   Reasons:
+     • mood matches (chill)
+     • energy 0.28 vs preferred 0.00 (+1.44)
+
+2. Library Rain — Paper Lanterns
+   Score: 3.80
+   Reasons:
+     • mood matches (chill)
+     • energy 0.35 vs preferred 0.00 (+1.30)
+
+3. Midnight Coding — LoRoom
+   Score: 3.66
+   Reasons:
+     • mood matches (chill)
+     • energy 0.42 vs preferred 0.00 (+1.16)
+
+4. Coffee Shop Stories — Slow Stereo
+   Score: 1.26
+   Reasons:
+     • energy 0.37 vs preferred 0.00 (+1.26)
+
+5. Focus Flow — LoRoom
+   Score: 1.20
+   Reasons:
+     • energy 0.40 vs preferred 0.00 (+1.20)
+```
+```
+================================================
+  Top 5 recommendations
+  for happy / ambient @ energy 1.0
+================================================
+
+1. Levitating — Dua Lipa
+   Score: 4.16
+   Reasons:
+     • mood matches (happy)
+     • energy 0.83 vs preferred 1.00 (+1.66)
+
+2. Sunrise City — Neon Echo
+   Score: 4.14
+   Reasons:
+     • mood matches (happy)
+     • energy 0.82 vs preferred 1.00 (+1.64)
+
+3. Rooftop Lights — Indigo Parade
+   Score: 4.02
+   Reasons:
+     • mood matches (happy)
+     • energy 0.76 vs preferred 1.00 (+1.52)
+
+4. Gym Hero — Max Pulse
+   Score: 1.86
+   Reasons:
+     • energy 0.93 vs preferred 1.00 (+1.86)
+
+5. Storm Runner — Voltline
+   Score: 1.82
+   Reasons:
+     • energy 0.91 vs preferred 1.00 (+1.82)
+```
+```
+================================================
+  Top 5 recommendations
+  for intense / lofi @ energy 1.0
+================================================
+
+1. Gym Hero — Max Pulse
+   Score: 4.36
+   Reasons:
+     • mood matches (intense)
+     • energy 0.93 vs preferred 1.00 (+1.86)
+
+2. Storm Runner — Voltline
+   Score: 4.32
+   Reasons:
+     • mood matches (intense)
+     • energy 0.91 vs preferred 1.00 (+1.82)
+
+3. Midnight Coding — LoRoom
+   Score: 1.84
+   Reasons:
+     • energy 0.42 vs preferred 1.00 (+0.84)
+     • genre matches (lofi)
+
+4. Focus Flow — LoRoom
+   Score: 1.80
+   Reasons:
+     • energy 0.40 vs preferred 1.00 (+0.80)
+     • genre matches (lofi)
+
+5. Uptown Funk — Mark Ronson ft. Bruno Mars
+   Score: 1.72
+   Reasons:
+     • energy 0.86 vs preferred 1.00 (+1.72)
+```
 **Screenshot or video** *(optional)*: <!-- Insert a screenshot or demo video link here -->
 
 ---

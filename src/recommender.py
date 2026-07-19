@@ -81,9 +81,10 @@ def score_song(user_prefs: Dict, song: Dict) -> Tuple[float, List[str]]:
     reasons: List[str] = []
 
     # Mood: string, so only an exact match earns points.
+    # --- EXPERIMENT: mood check temporarily disabled to measure its impact ---
     if user_prefs["mood"] == song["mood"]:
-        score += MOOD_WEIGHT
-        reasons.append(f"mood matches ({song['mood']})")
+         score += MOOD_WEIGHT
+         reasons.append(f"mood matches ({song['mood']})")
 
     # Energy: numeric, so score by how close it is. 1 - |diff| is 1 when
     # identical and drops toward 0 as the energies get further apart.
