@@ -3,7 +3,8 @@
 ## 1. Model Name  
 
 Give your model a short, descriptive name.  
-Example: **VibeFinder 1.0**  
+
+Name: SongMap 1.0: 
 
 ---
 
@@ -11,11 +12,8 @@ Example: **VibeFinder 1.0**
 
 Describe what your recommender is designed to do and who it is for. 
 
-Prompts:  
+New songs, all mapped to your tastes. SongMap is a program designed to generate song recommendations based on your preferences, whether it be by mood, genre, or energy. It weighs song attributes against a user's preferences and assigns a score to each song. Then the songs are ranked from highest to lowest score, highest meaning the song best matches the user. It assumes that the user wants a song that best matches their mood and energy (since this is more closely related to vibes), rather than just the genre. This is why energy and mood are given greater weights when deciding a song's score. Since this is just a simple system, this is just for classroom exploration. There is still a lot of bias involved because this system does not have a way to analyze user behavior (likes, playlists, most listened songs, etc.) and whether a user prioritizes genre, mood, and energy the most. Right now as the programmer, I am assuming the weights for each song attribute based on my personal preferences.
 
-- What kind of recommendations does it generate  
-- What assumptions does it make about the user  
-- Is this for real users or classroom exploration  
 
 ---
 
@@ -23,14 +21,9 @@ Prompts:
 
 Explain your scoring approach in simple language.  
 
-Prompts:  
+Each song has three attributes taken into account: genre, mood, and energy. The user profile contains a preferred genre, mood, and target energy level (as well as whether they like acoustics but that is not referenced in this system). For every song in the catalog, the recommender compares these features against the user's preferences.
 
-- What features of each song are used (genre, energy, mood, etc.)  
-- What user preferences are considered  
-- How does the model turn those into a score  
-- What changes did you make from the starter logic  
-
-Avoid code here. Pretend you are explaining the idea to a friend who does not program.
+Genre and mood are compared using exact string matches. If the values match, the song earns points. Energy is compared numerically by measuring how close the song's energy is to the user's preferred energy. Mood receives the highest weight (2.5), energy is weighted second (2.0), and genre is weighted third (1.0). After every song receives a score, the songs are sorted from highest to lowest, and the highest scoring songs are recommended first. Compared to the starter logic, I adjusted the weights to emphasize mood over genre because I wanted recommendations to prioritize a song's overall vibe rather than only its genre. Genre can also be very niche and specific and since this system will only give genre points for being an exact match, I felt that mood and energy can give songs that generally match a wide variety of genres.
 
 ---
 
@@ -38,12 +31,9 @@ Avoid code here. Pretend you are explaining the idea to a friend who does not pr
 
 Describe the dataset the model uses.  
 
-Prompts:  
+The recommender uses a set of 15 songs stored in a CSV file. The dataset contains popular pop, rock, jazz, lofi, and ambient songs with moods such as happy, chill, and intense. Each song also includes numerical values like energy, tempo, valence, danceability, and acousticness, although only genre, mood, and energy are currently used for scoring.
 
-- How many songs are in the catalog  
-- What genres or moods are represented  
-- Did you add or remove data  
-- Are there parts of musical taste missing in the dataset  
+I expanded the starter dataset by adding several popular songs to increase genre variety. However, the catalog is still small and does not represent every musical style or mood. Many combinations, such as chill pop or intense lofi, are missing, which limits the recommendations the system can produce. Also because the popular songs I added have very specific and uncommon genres and moods, they didn't seem to show up as often so the dataset doesn't include a wide variety of musical tastes.
 
 ---
 
@@ -51,11 +41,9 @@ Prompts:
 
 Where does your system seem to work well  
 
-Prompts:  
+The recommender performs well for users whose preferences closely match songs that exist in the dataset. For example, the aligned pop, rock, and lofi profiles consistently receive recommendations that fit both their desired mood and energy. In theses cases, it makes sense for the user's mood, energy and preferred genre to correlate and the recommender is able to match songs the best in these cases. The weighted scoring also does a good job distinguishing between users with opposite preferences, such as energetic pop fans versus relaxed lofi listeners.
 
-- User types for which it gives reasonable results  
-- Any patterns you think your scoring captures correctly  
-- Cases where the recommendations matched your intuition  
+The explanations generated for every recommendation also make the system easier to understand because users can see exactly which features contributed to each song's score.
 
 ---
 
@@ -139,12 +127,9 @@ Another thing that surprised me was how often "Gym Hero" showed up in most lists
 
 Ideas for how you would improve the model next.  
 
-Prompts:  
+In the future, I would include additional features such as tempo, valence, acousticness, artist similarity, and multiple genres per song. Allowing matches for similar genres or moods instead of the exact match would also improve recommendation quality. I also think this is how real recommendation systems work especially for more niche genres or moods.
 
-- Additional features or preferences  
-- Better ways to explain recommendations  
-- Improving diversity among the top results  
-- Handling more complex user tastes  
+I would also expand the song database significantly and introduce diversity into the recommendation algorithm, so the same songs do not appear repeatedly for different users. Finally, I would provide more detailed explanations that show how much each feature contributed to the final score, making the recommendations more transparent.
 
 ---
 
@@ -152,8 +137,6 @@ Prompts:
 
 A few sentences about your experience.  
 
-Prompts:  
+This project helped me understand that recommendation systems are much more sorting and matching data. They depend on specific features, scoring rules, and the quality of the dataset. Even changing the weight by a little can change which songs are recommended.
 
-- What you learned about recommender systems  
-- Something unexpected or interesting you discovered  
-- How this changed the way you think about music recommendation apps  
+One thing that was interesting was how easily bias appeared in such a simple system. Maybe it's because this is a simple model, but I wonder how biases would change for a more complicated system. The main bias I found was that because my dataset lacks certain genres and moods, some users consistently receive stronger recommendations than others. It made me realize why music apps put so much effort into collecting diverse data and analyzing user behavior, so they can accommodate each person's unique listening experience. This also made me realize that to reduce bias, the system must be tweaked to each user to give the most accurate recommendations.
