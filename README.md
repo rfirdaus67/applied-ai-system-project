@@ -76,6 +76,40 @@ You can add more tests in `tests/test_recommender.py`.
 
 Paste a sample of your recommender's output here as a text block so a reader can see what it produces:
 
+================================================
+  Top 5 recommendations
+  for happy / pop @ energy 0.8
+================================================
+
+1. Sunrise City — Neon Echo
+   Score: 5.46
+   Reasons:
+     • mood matches (happy)
+     • energy 0.82 vs preferred 0.80 (+1.96)
+     • genre matches (pop)
+
+2. Rooftop Lights — Indigo Parade
+   Score: 4.42
+   Reasons:
+     • mood matches (happy)
+     • energy 0.76 vs preferred 0.80 (+1.92)
+
+3. Gym Hero — Max Pulse
+   Score: 2.74
+   Reasons:
+     • energy 0.93 vs preferred 0.80 (+1.74)
+     • genre matches (pop)
+
+4. Levitating — Dua Lipa
+   Score: 1.94
+   Reasons:
+     • energy 0.83 vs preferred 0.80 (+1.94)
+
+5. Night Drive Loop — Neon Echo
+   Score: 1.90
+   Reasons:
+     • energy 0.75 vs preferred 0.80 (+1.90)
+
 ```
 # e.g.:
 # User profile: genre=indie, mood=chill, energy=low
