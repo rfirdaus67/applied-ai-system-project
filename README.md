@@ -27,6 +27,7 @@ Features Song class will have: genre, mood, and energy
 Features UserProfile will have/store: favorite genre, preferred mood, and preferred energy and whether they like acoustics.
 
 My Recommender computes a score by giving mood +2.5 points, energy +2.0 points, and genre +1.0 points, prioritizing mood. Since mood is a string and is the most depended on, if the moods aren't an exact match then no points are given. So even if a song has a similar mood which should be given more priority, they'll get another song most likely. Since genre and mood are strings, they are given a higher score if they are exact matches. Doing 1 - |song.energy - user.preferred_energy| for the energy score to see how close the energies are (closer to 1). Songs are recomended by having a score calculated for them then sorted from highest to lowest.
+
 ---
 
 ## Getting Started
@@ -70,6 +71,7 @@ Paste a sample of your recommender's output here as a text block so a reader can
 
 The outputs/recommendations below are for the 5 different user profiles:
 
+```
 ================================================
   Top 5 recommendations
   for happy / pop @ energy 0.8
@@ -103,6 +105,7 @@ The outputs/recommendations below are for the 5 different user profiles:
    Score: 1.90
    Reasons:
      • energy 0.75 vs preferred 0.80 (+1.90)
+```
 
 ```
 ================================================

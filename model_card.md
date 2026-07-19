@@ -52,6 +52,7 @@ The explanations generated for every recommendation also make the system easier 
 Where the system struggles or behaves unfairly. 
 
 The system quietly favors users who prefer mid-energy songs because the dataset only has songs that span from 0.28-0.93. Also because genre is underweighted compared to mood and energy, a perfect genre match can lose to a totally different genre with a closer energy. This affects users with a niche genre interest. This system also favors people with common mood interests because the dataset mostly contains happy and chill songs. People who prefer these moods are most likely to get multiple songs that adhere to this while people who prefer moods will get at most, one song that matches their mood. This system also doesn't account for acoustics when this is something included in the user profile.
+
 ---
 
 ## 7. Evaluation  
