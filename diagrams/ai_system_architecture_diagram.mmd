@@ -7,20 +7,21 @@ flowchart TD
 
     subgraph Application
         C[Streamlit App - app.py]
-        D[Weights get assigned and Preferences are stored]
+        D[Python Backend]
+        E[Weights get assigned, Preferences are returned in a prompt]
     end
 
     subgraph AI_System
-        E[Gemini API Agent]
-        F[(Song Dataset)]
+        F[Gemini API Agent]
+        G[(Song Dataset)]
     end
 
     subgraph Output
-        G[Top 5 Ranked Songs]
+        H[Top 5 Ranked Songs]
     end
 
     subgraph Evaluation
-        H[User Reviews Results]
+        I[User Reviews Results]
     end
 
     A --> C
@@ -30,4 +31,5 @@ flowchart TD
     E --> F
     F --> G
     G --> H
-    H -. Can regenerate .-> E
+    H --> I
+    I -. Can regenerate .-> F
