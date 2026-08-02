@@ -1,0 +1,33 @@
+flowchart TD
+
+    subgraph Input
+        A[User Preferences<br/>Genre, Mood, Energy level]
+        B[Ranking of Genre, Mood, Energy]
+    end
+
+    subgraph Application
+        C[Streamlit App - app.py]
+        D[Weights get assigned and Preferences are stored]
+    end
+
+    subgraph AI_System
+        E[Gemini API Agent]
+        F[(Song Dataset)]
+    end
+
+    subgraph Output
+        G[Top 5 Ranked Songs]
+    end
+
+    subgraph Evaluation
+        H[User Reviews Results]
+    end
+
+    A --> C
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H -. Can regenerate .-> E

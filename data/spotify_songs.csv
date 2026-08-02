@@ -1,0 +1,103 @@
+id,artists,track_name,energy,track_genre,mood
+0,Gen Hoshino,Comedy,0.461,acoustic,Chill
+1,Limoblaze;Lecrae;Happi,Jireh (My Provider),0.778,afrobeat,Energetic
+2,The Neighbourhood,Daddy Issues,0.521,alt-rock,Melancholy
+3,Amaarae;Kali Uchis;Moliy,SAD GIRLZ LUV MONEY Remix (feat. Kali Uchis and Moliy),0.523,alternative,Happy
+4,Cigarettes After Sex,K.,0.4,ambient,Chill
+5,美波,カワキヲアメク,0.846,anime,Energetic
+6,Cradle Of Filth,Hallowed Be Thy Name,0.972,black-metal,Intense
+7,Eric Johnson,Cliffs Of Dover - Instrumental,0.775,bluegrass,Energetic
+8,Everybody Loves an Outlaw,I See Red,0.448,blues,Melancholy
+9,Öwnboss;Sevek,Move Your Body,0.821,brazil,Energetic
+10,Bassnectar;Ohana Bam;Lafa Taylor,Speakerbox (feat. Ohana Bam & Lafa Taylor) - F8 Remix,0.88,breakbeat,Energetic
+11,Adele,Love In The Dark,0.341,british,Happy
+12,my little airport,每次你走的時分,0.505,cantopop,Passionate
+13,Aaron Smith;Luvli;Krono,Dancin - Krono Remix,0.727,chicago-house,Energetic
+14,Pinkfong,Baby Shark,0.886,children,Energetic
+15,dhruv,double take,0.437,chill,Chill
+16,Bombay Jayashri,Zara Zara,0.268,classical,Chill
+17,Gesaffelstein;The Weeknd,Lost in the Fire (feat. The Weeknd),0.671,club,Energetic
+18,Jon Lajoie,Everyday Normal Guy 2,0.731,comedy,Lively
+19,Dan + Shay;Justin Bieber,"10,000 Hours (with Justin Bieber)",0.63,country,Lively
+20,Chris Brown,Under The Influence,0.69,dance,Energetic
+21,Burna Boy,23 (Mixed),0.541,dancehall,Energetic
+22,Gojira,Our Time Is Now,0.949,death-metal,Intense
+23,Tez Cadey,Seve - Radio Edit,0.831,deep-house,Energetic
+24,Octave One,Blackwater - 128 full strings vocal mix,0.81,detroit-techno,Energetic
+25,"Earth, Wind & Fire",September,0.832,disco,Energetic
+26,Billy Eichner;Seth Rogen;JD McCrary;Childish Gambino,Hakuna Matata,0.584,disney,Happy
+27,Sigma;Birdy,Find Me,0.805,drum-and-bass,Intense
+28,ILLENIUM;Teddy Swims,All That Really Matters,0.666,dub,Energetic
+29,Dabin;Lexi Norton,In Flames,0.73,dubstep,Intense
+30,Ritviz,Liggi,0.667,edm,Energetic
+31,Jeremy Zucker,comethru,0.178,electro,Chill
+32,DJ Snake;AlunaGeorge,You Know You Like It,0.725,electronic,Energetic
+33,XXXTENTACION;Lil Pump;Swae Lee;Maluma,Arms Around You (feat. Maluma & Swae Lee),0.723,emo,Dark
+34,Salim–Sulaiman;Rahat Fateh Ali Khan;Jaideep Sahni,O Re Piya,0.532,folk,Mellow
+35,Kevi Jonny;Tierry,Dona Encrenca,0.455,forro,Feel-Good
+36,M83,Midnight City,0.729,french,Passionate
+37,Coolio;L.V.,Gangsta's Paradise,0.514,funk,Energetic
+38,Arctic Monkeys,I Wanna Be Yours,0.417,garage,Feel-Good
+39,Hans Zimmer,Cornfield Chase,0.226,german,Chill
+40,Tasha Cobbs Leonard,O Holy Night,0.463,gospel,Warm
+41,Within Temptation,All I Need,0.73,goth,Dark
+42,Despise You,Divisions,0.934,grindcore,Intense
+43,Pascal Letoublon,Friendships,0.78,groove,Energetic
+44,Thirty Seconds To Mars,The Kill (Bury Me),0.912,grunge,Intense
+45,Ichika Nito,i miss you,0.489,guitar,Chill
+46,The Prophet,Wanna Play?,0.996,happy,Energetic
+47,Ghost,Mary On A Cross,0.9,hard-rock,Intense
+48,Fat Joe;Remy Ma;French Montana;InfaRed,All The Way Up (feat. Infared),0.721,hardcore,Intense
+49,Headhunterz;KSHMR,Dharma,0.919,hardstyle,Intense
+50,X JAPAN,紅(イントロ ストリングス) - Remaster,0.979,heavy-metal,Intense
+51,AP Dhillon,Summer High,0.541,hip-hop,Energetic
+52,George Jones,He Stopped Loving Her Today,0.232,honky-tonk,Chill
+53,Surf Mesa;Emilee,ily (i love you baby) (feat. Emilee),0.774,house,Energetic
+54,Seekae,Test & Recognise,0.601,idm,Intense
+55,Anuv Jain,Gul,0.294,indian,Feel-Good
+56,JVKE,golden hour,0.593,indie-pop,Happy
+57,Yohani;Jubin Nautiyal;Tanishk Bagchi;Rashmi Virag;Surya Ragunaathan,"Manike (From ""Thank God"")",0.578,indian,Happy
+58,Marilyn Manson,Killing Strangers,0.55,industrial,Intense
+59,Crows in the Rain,Dri:merz Path / Way,0.338,iranian,Feel-Good
+60,Fetty Wap;Remy Boyz,679 (feat. Remy Boyz),0.717,j-dance,Energetic
+61,Nogizaka46,月の大きさ,0.941,j-idol,Energetic
+62,YOASOBI,夜に駆ける,0.874,j-pop,Energetic
+63,SiM,The Rumbling,0.878,j-rock,Intense
+64,"Grover Washington, Jr.;Bill Withers",Just the Two of Us (feat. Bill Withers),0.497,jazz,Romantic
+65,Alka Yagnik;Arijit Singh,Agar Tum Saath Ho,0.519,indian,Happy
+66,Mr. C,Cha Cha Slide,0.905,kids,Energetic
+67,Bad Bunny;Drake,MIA,0.539,latin,Energetic
+68,J Balvin;Dua Lipa;Bad Bunny;Tainy,UN DIA (ONE DAY),0.695,latino,Energetic
+69,Pina Colada Blues;Anumita Nadesan,Tera Nishaan,0.573,Indian,Energetic
+70,JJ Lin,Lose Control,0.75,mandopop,Sultry
+71,Bring Me The Horizon,Can You Feel My Heart,0.859,metal,Intense
+72,I Prevail,Bow Down,0.959,metalcore,Intense
+73,Argy,Tataki,0.401,minimal-techno,Feel-Good
+74,Rodrigo Amarante,Tuyo (Narcos Theme) [Extended Version] - A Netflix Original Series Soundtrack,0.497,mpb,Romantic
+75,Enigma,Sadeness,0.644,new-age,Mellow
+76,Josh Groban,You Raise Me Up,0.136,opera,Chill
+77,Péricles,Supera - Ao Vivo,0.714,pagode,Energetic
+78,Harris & Ford;2 Engel & Charlie,Amsterdam,0.839,party,Energetic
+79,OneRepublic,I Ain't Worried,0.797,piano,Energetic
+80,Gajendra Verma,Mann Mera,0.765,pop-film,Energetic
+81,The Weeknd,Blinding Lights,0.73,pop,Happy
+82,Blondie,Heart Of Glass,0.725,power-pop,Happy
+83,Hardwell;Mitch Crown,Call Me a Spaceman - Radio Edit,0.877,progressive-house,Energetic
+84,Pink Floyd,Wish You Were Here,0.262,psych-rock,Intense
+85,blink-182,"Happy Holidays, You Bastard",0.99,punk-rock,Intense
+86,Green Day,Boulevard of Broken Dreams,0.682,punk,Intense
+87,Lil Tjay;6LACK,Calling My Phone,0.393,r-n-b,Melancholy
+88,KAROL G,PROVENZA,0.516,reggae,Energetic
+89,Becky G,Lovin' So Hard,0.828,reggaeton,Energetic
+90,Elvis Presley,Can't Help Falling in Love,0.293,rock-n-roll,Intense
+91,Beach Weather,"Sex, Drugs, Etc.",0.839,rock,Intense
+92,Brenda Lee,Rockin' Around the Christmas Tree - Re-Recorded Version,0.641,rockabilly,Lively
+93,Igor Talkov,Чистые пруды,0.321,romance,Romantic
+94,Powfu;beabadoobee,death bed (coffee for your head),0.431,sad,Melancholy
+95,Frankie Ruiz,Tú Con Él,0.779,salsa,Energetic
+96,Nil Sagar,Darling,0.866,samba,Energetic
+97,João Bosco & Vinicius,Quase Recaída,0.897,sertanejo,Energetic
+98,Loren Allred,Never Enough,0.394,show-tunes,Romantic
+99,Stephen Sanchez;Em Beihold,Until I Found You (with Em Beihold) - Em Beihold Version,0.55,singer-songwriter,Mellow
+100,Twice,THIS IS FOR, 0.75,Kpop,feel-good
+101,Kenshi Yonezu,IRIS OUT,0.87,Anime,energetic
