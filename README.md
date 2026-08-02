@@ -185,13 +185,13 @@ All 16 out of 16 ranking tests passed. The suite verifies that however ranked at
 
 Human Evaluation Table:
 
-| Test Input | Evaluation Criteria | Result|
+| Test Input | Evaluation Criteria | Result |
 | --- | --- | --- |
-| No input for genre and mood | Handles gracefully and still gives recommendations based on energy| Pass - notes that the user did not give a genre and mood |
+| No input for genre and mood | Handles gracefully and still gives recommendations based on energy | Pass - notes that the user did not give a genre and mood |
 | AI model is busy/error generating response | Displays the error message from Gemini | Fail - doesn't give any recommendations |
 | No rankings selected | Alerts the user they need to rank the attributes | Pass - doesn't give output without this critical info |
-| Genre: Kpop (#1), Mood: Feel-good (#2), Energy: 0.25 (#3) |  | Top 3 recommendations are of same/similar genre, last 2 look at other attributes when genre can't be looked at | Pass - the most weighted attribute (genre) dominates the recommendations and matches user's ranking |
-| Genre: Kpop, Indian (#1), Mood: Feel-good, Energetic (#3), Energy: 0.55 (#2) |  | All recommendations are of the said genres and the top 3 have similar energy levels. Both genres and moods input are reflected | Pass - Multiple genres and moods work for flexability  |
+| Genre = Kpop (#1) & Mood: Feel-good (#2) & Energy: 0.25 (#3) | Top 3 recommendations are of same/similar genre | Pass - the most weighted attribute (genre) dominates the recommendations and matches user's ranking |
+| Genre = Kpop, Indian (#1) & Mood: = Feel-good, Energetic (#3) & Energy = 0.55 (#2) | All recommendations have similar genres and energy | Pass - Shows multiple genres and moods work for flexibility |
 
 ---
 
