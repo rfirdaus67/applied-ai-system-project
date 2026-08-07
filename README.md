@@ -18,7 +18,7 @@ This project implements a simple music recommender that matches songs to a user'
 
 Title: AI Music DJ
 
-Summary: This system utilizes the Gemini API agent to take in user preferences and read a dataset of songs to recommend songs that best fit the user. This project matters because without using an agent, the original system was much more strict. It could only take one mood and genre and if they weren't an exact match, no points were given. By prompting the Gemini agent, we can now account for similarity instead of exact matches, which more closely resembles real recommendation systems. All without building more complex backend code.
+Summary: This system scores a dataset of songs against the user's preferences using TF-IDF vectors and cosine similarity, then uses the Gemini API agent to explain the results. This project matters because without similarity scoring, the original system was much more strict. It could only take one mood and genre and if they weren't an exact match, no points were given. With cosine similarity, near-misses like "alt-rock" against "rock" earn partial credit instead of zero, which more closely resembles real recommendation systems — and because the math happens in Python, the same preferences always produce the same ranking.
 
 ---
 
@@ -28,9 +28,11 @@ Summary: This system utilizes the Gemini API agent to take in user preferences a
 
 - Preferences and rankings are fed into ranking.py, where weights are assigned to each attribute based on ranking (Ex: #1 ranking = 6.0)
 
-- ranking.py returns a specific prompt containing the user info (RAG payload) that is fed into Gemini agent
+- scoring.py loads spotify_songs.csv, turns each song's genre and mood into TF-IDF vectors, and measures cosine similarity against the user's genre and mood. Energy is compared numerically. The three similarity columns form a 2D matrix that is multiplied by the user's weight vector, and the weighted sums are the scores
 
-- Gemini returns top 5 recommended songs and why on streamlit interface, where the user can review the results and regenerate if wanted
+- The top 5 scoring songs are sent to the Gemini agent as small text chunks, one line per song with its score breakdown. The full dataset is never uploaded
+
+- Gemini writes the explanation for each of those 5 songs without reordering them. Streamlit shows the score table first, then the explanations, and the user can regenerate if wanted
 
 ---
 

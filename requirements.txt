@@ -1,3 +1,7 @@
+google-genai
+numpy
 pandas
 pytest
+python-dotenv
+scikit-learn
 streamlit

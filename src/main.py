@@ -1,15 +1,13 @@
 """Demo for the AI Music DJ.
 
-Runs a few example user profiles and their preferences through the Gemini API
-agent and prints the results to the terminal
-
+Runs a few example user profiles & prints the results to the terminal.
 """
 from gemini import generate
-from ranking import build_rag_payload
+from ranking import build_prefs, build_weights
 
 # Each example mirrors what app.py collects: a genre, a mood, a target energy,
-# and a priority ranking (the order the user clicked the features in, where the
-# first item is the #1 priority and gets the most weight).
+# and the ranking order
+
 EXAMPLES = [
     {
         "label": "Example 1 — Energy-first workout playlist",
@@ -31,9 +29,10 @@ EXAMPLES = [
 
 
 def run_example(example):
-    payload = build_rag_payload(
-        example["genre"], example["mood"], example["energy"], example["rank_order"]
+    prefs_payload = build_prefs(
+        example["genre"], example["mood"], example["energy"]
     )
+    weights_payload = build_weights(example["rank_order"])
 
     print("=" * 78)
     print(example["label"])
@@ -42,10 +41,19 @@ def run_example(example):
     print(f"  Mood:       {example['mood']}")
     print(f"  Energy:     {example['energy']}")
     print(f"  Priority:   {' > '.join(example['rank_order'])}  (1st = most weight)")
-    print(f"  Weights:    {payload['dynamic_weights']}")
+    print(f"  Weights:    {weights_payload['weights']}")
     print("-" * 78)
-    print("AI recommendations:\n")
-    print(generate(payload))
+
+    explanation, recommended, token_count = generate(prefs_payload, weights_payload)
+
+    print("Cosine similarity ranking:\n")
+    print(
+        recommended[[
+            "artists", "track_name", "track_genre", "mood", "energy", "final_score"
+        ]].to_string(index=False)
+    )
+    print(f"\nAI explanations ({token_count} prompt tokens):\n")
+    print(explanation)
     print()
 
 
